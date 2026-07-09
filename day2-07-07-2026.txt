@@ -1,0 +1,137 @@
+'''- Dictionary, list, tuples, sets- 5 methods each 
+- If,ifelse, if-elif -else, nested if-else,  (1 loop each)
+- Break, continue, pass  ( 1 example each)
+- Input method,   ( 1 example)
+- Range, len, type functions,  ( 1 example each)
+- For, while loops. ( 1 example each)'''
+d = {'name': 'Alice', 'age': 30, 'city': 'New York',
+     'job': 'Engineer', 'hobby': 'Reading'}
+print('Dictionary:', d)
+print('Name:', d.get('name'))
+print('Keys:', d.keys())
+print('Values:', d.values())
+print('Items:', d.items())
+d.update({'age': 31})
+print('Updated Dictionary:', d)
+print()
+l = [1, 2, 3, 4, 5]
+print('List:', l)
+print('Length of list:', len(l))
+print('Type of list:', type(l))
+l.append(6)
+print('After appending 6:', l)
+l.remove(3)
+print('After removing 3:', l)
+l.insert(2, 10)
+print('After inserting 10 at index 2:', l)
+l.sort()
+print('After sorting:', l)
+l.reverse()
+print('After reversing:', l)
+print()
+t = (1, 2, 3, 4, 5)
+print('Tuple:', t)
+print('Length of tuple:', len(t))
+print('Type of tuple:', type(t))
+print('Count of 2:', t.count(2))
+print('Index of 3:', t.index(3))
+print()
+s = {1, 2, 3, 4, 5}
+print('Set:', s)
+print('Length of set:', len(s))
+print('Type of set:', type(s))
+print('Length of set:', len(s))
+s.add(6)
+print('After adding 6:', s)
+s.remove(3)
+print('After removing 3:', s)
+s.update({7, 8})
+print('After updating with {7, 8}:', s)
+s.discard(4)
+print('After discarding 4:', s)
+s.pop()
+print('After popping an element:', s)
+print()
+n = int(input("Enter a number: "))
+print('Using if-elif-else statement:')
+if n > 0:
+    print(n, "is positive")
+elif n < 0:
+    print(n, "is negative")
+else:
+    print("The number is zero")
+print('Using for loop, range(), if-else, pass, continue, break:')
+for i in range(n):
+    if i == 0:
+        pass
+    if i % 2 == 0:
+        print(i, 'is even')
+        break
+    else:
+        print(i, 'is odd')
+        continue
+a, b, c = 5, 10, 15
+print('Using nested if-else statement:')
+if a > b:
+    if a > c:
+        print(a, "is the greatest")
+    else:
+        print(c, "is the greatest")
+else:
+    if b > c:
+        print(b, "is the greatest")
+    else:
+        print(c, "is the greatest")
+print('Using while loop:')
+while n > 0:
+    print(n)
+    n -= 1
+
+Output:
+Dictionary: {'name': 'Alice', 'age': 30, 'city': 'New York', 'job': 'Engineer', 'hobby': 'Reading'}
+Name: Alice
+Keys: dict_keys(['name', 'age', 'city', 'job', 'hobby'])
+Values: dict_values(['Alice', 30, 'New York', 'Engineer', 'Reading'])
+Items: dict_items([('name', 'Alice'), ('age', 30), ('city', 'New York'), ('job', 'Engineer'), ('hobby', 'Reading')])
+Updated Dictionary: {'name': 'Alice', 'age': 31, 'city': 'New York', 'job': 'Engineer', 'hobby': 'Reading'}
+
+List: [1, 2, 3, 4, 5]
+Length of list: 5
+Type of list: <class 'list'>
+After appending 6: [1, 2, 3, 4, 5, 6]
+After removing 3: [1, 2, 4, 5, 6]
+After inserting 10 at index 2: [1, 2, 10, 4, 5, 6]
+After sorting: [1, 2, 4, 5, 6, 10]
+After reversing: [10, 6, 5, 4, 2, 1]
+
+Tuple: (1, 2, 3, 4, 5)
+Length of tuple: 5
+Type of tuple: <class 'tuple'>
+Count of 2: 1
+Index of 3: 2
+
+Set: {1, 2, 3, 4, 5}
+Length of set: 5
+Type of set: <class 'set'>
+Length of set: 5
+After adding 6: {1, 2, 3, 4, 5, 6}
+After removing 3: {1, 2, 4, 5, 6}
+After updating with {7, 8}: {1, 2, 4, 5, 6, 7, 8}
+After discarding 4: {1, 2, 5, 6, 7, 8}
+After popping an element: {2, 5, 6, 7, 8}
+
+Enter a number: 7
+Using if-elif-else statement:
+7 is positive
+Using for loop, range(), if-else, pass, continue, break:
+0 is even
+Using nested if-else statement:
+15 is the greatest
+Using while loop:
+7
+6
+5
+4
+3
+2
+1
