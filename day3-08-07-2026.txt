@@ -1,0 +1,183 @@
+import numpy as np  # Import the NumPy library
+
+# Create a 3D NumPy array
+# Shape = (2, 2, 2)
+arr = np.array([
+    [[9, 52], [33, 48]],
+    [[15, 96], [48, 38]]
+])
+
+print(arr)
+# Output:
+# [[[ 9 52]
+#   [33 48]]
+#
+#  [[15 96]
+#   [48 38]]]
+
+# Access Block 0, Row 1, Column 1
+# Output: 48
+print('value at index [0][1][1]:', arr[0][1][1])
+
+# Multiply 9 × 52
+# Output: 468
+print('Multiplication of first row elements:',
+      arr[0][0][0] * arr[0][0][1])
+
+# Divide 15 by 96
+# Output: 0.15625
+print('Division of third row elements:',
+      arr[1][0][0] / arr[1][0][1])
+
+# Find remainder of 9 ÷ 52
+# Output: 9
+print('Remainder of first row elements:',
+      arr[0][0][0] % arr[0][0][1])
+
+# e^15 and e^96
+# Output: Very large exponential values
+print('(1) Exponent of Fourth row elements:',
+      np.exp(arr[1][0]))
+
+# Multiply every element together
+# Output: 3583382407680
+print('(2) Multiplication of all elements in the array:',
+      np.prod(arr))
+
+# Sum of 33 + 48
+# Output: 81
+print('(3) Sum of second row elements:',
+      np.sum(arr[0][1]))
+
+# Average of all 8 elements
+# Output: 42.375
+print('(4) Mean of all elements:',
+      np.mean(arr))
+
+# Standard deviation
+# Output: ≈ 25.92
+print('(5) Standard deviation of all elements:',
+      np.std(arr))
+
+# Variance
+# Output: ≈ 671.48
+print('(6) Variance of all elements:',
+      np.var(arr))
+
+# Largest value
+# Output: 96
+print('(7) Maximum value in the array:',
+      np.max(arr))
+
+# Smallest value
+# Output: 9
+print('(8) Minimum value in the array:',
+      np.min(arr))
+
+# Index of maximum value in flattened array
+# Flattened: [9 52 33 48 15 96 48 38]
+# Output: 5
+print('(9) Index of maximum value in the array:',
+      np.argmax(arr))
+
+# Index of minimum value
+# Output: 0
+print('(10) Index of minimum value in the array:',
+      np.argmin(arr))
+
+# Convert 3D array into 1D array
+brr = np.ravel(arr)
+
+# Sort the flattened array
+brr = np.sort(brr)
+
+# Output:
+# [ 9 15 33 38 48 48 52 96]
+print('(11) Sorted array:', brr)
+
+# Swap axes of the array
+# New shape = (2,2,2)
+print('(12) Transpose of the array:',
+      np.transpose(arr))
+
+# Reshape into (1,4,2)
+# Output:
+# [[[ 9 52]
+#   [33 48]
+#   [15 96]
+#   [48 38]]]
+print('(13) Reshaped array:',
+      np.reshape(arr, (1, 4, 2)))
+
+# Flattened array
+# Output:
+# [ 9 15 33 38 48 48 52 96]
+print('(14) Flattened array:', brr)
+
+# Remove duplicate values
+# Output:
+# [ 9 15 33 38 48 52 96]
+print('(15) Unique elements in the array:',
+      np.unique(arr))
+
+# Square root of every element
+# Example:
+# sqrt(9)=3
+# sqrt(52)=7.211...
+print('(16) Square root of all elements:',
+      np.sqrt(arr))
+
+# Natural logarithm of every element
+# Example:
+# ln(9)=2.197
+print('(17) Logarithm of all elements:',
+      np.log(arr))
+
+# Sine of every element (in radians)
+print('(18) Sine of all elements:',
+      np.sin(arr))
+
+# Cosine of every element (in radians)
+print('(19) Cosine of all elements:',
+      np.cos(arr))
+
+# Tangent of every element (in radians)
+print('(20) Tangent of all elements:',
+      np.tan(arr))
+
+# Add 5 to every element
+# Output:
+# [[[14 57]
+#   [38 53]]
+#
+#  [[20 101]
+#   [53 43]]]
+print('(21) Adding 5 to all elements:',
+      np.add(arr, 5))
+
+# Append one more block
+# New shape = (3,2,2)
+print('(22) Adding new elements to the array:',
+      np.append(arr,
+                [[[1,2],
+                  [3,4]]],
+                axis=0))
+
+# Delete the first block
+# Output:
+# [[[15 96]
+#   [48 38]]]
+print('(23) Deleting elements from the array:',
+      np.delete(arr, 0, axis=0))
+
+# Stack arr on top of another arr
+# Shape changes from (2,2,2) to (4,2,2)
+print('(24) Stacking arrays vertically:',
+      np.vstack((arr, arr)))
+
+# Find the position where 50 should be inserted
+# Sorted array:
+# [ 9 15 33 38 48 48 52 96]
+# Output: 6
+print('(25) Position to insert 50:',
+      np.searchsorted(brr, 50))
