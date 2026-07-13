@@ -1,0 +1,16 @@
+Person_ID,Age,Gender,City,Transport_Mode,Electricity_Usage,Water_Usage,Waste_Recycled,Solar_Panels,Green_Certification,Trees_Planted,Sustainability_Score,Eco_Friendly
+1,22,Female,Ahmedabad,Bus,185,4200,75,Yes,Yes,12,88,Yes
+2,25,Male,Surat,Car,310,6200,30,No,No,2,49,No
+3,21,Female,Vadodara,Bicycle,150,3800,85,Yes,Yes,15,94,Yes
+4,27,Male,Rajkot,Metro,240,5100,60,No,Yes,8,72,Yes
+5,23,Female,Ahmedabad,Walking,120,3500,90,Yes,Yes,20,98,Yes
+6,24,Male,Surat,Car,,5800,40,No,No,3,55,No
+7,22,Female,Rajkot,Bus,200,,68,Yes,Yes,10,81,Yes
+8,26,Male,Vadodara,Metro,260,5400,,No,No,5,64,No
+9,20,Female,Ahmedabad,Bicycle,140,3600,88,Yes,,18,95,Yes
+10,28,Male,Surat,Car,330,6800,25,No,No,,42,No
+11,23,Female,Rajkot,Walking,110,3300,92,Yes,Yes,22,99,Yes
+12,25,Male,Vadodara,Bus,210,4700,65,No,Yes,7,74,Yes
+13,21,Female,Ahmedabad,Bicycle,160,3900,80,Yes,Yes,14,90,Yes
+14,27,Male,Surat,Car,320,6400,28,No,No,1,46,No
+15,24,Female,Rajkot,Metro,230,5000,58,Yes,Yes,9,76,Yes
