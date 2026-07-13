@@ -1,0 +1,15 @@
+Student_ID,Stream,Gender,CGPA,Python_Skill,AI_Knowledge,Cloud_Knowledge,Recycling_Knowledge,Renewable_Energy,Carbon_Footprint,Green_Certification,Green_Skills_Score,Placement
+1001,CS,Female,9.1,Advanced,Yes,Yes,9,8,45.2,Yes,91,Yes
+1002,IT,Male,8.2,Intermediate,Yes,No,7,7,61.4,No,73,Yes
+1003,EC,Female,7.3,Beginner,No,No,5,4,84.3,No,48,No
+1004,Mech,Male,6.8,Beginner,No,No,6,5,92.7,No,52,No
+1005,Civil,Female,8.7,Intermediate,Yes,Yes,8,9,40.8,Yes,87,Yes
+1006,CS,Male,9.4,Advanced,Yes,Yes,10,9,35.5,Yes,96,Yes
+1007,IT,Female,7.8,Intermediate,Yes,No,7,6,58.9,No,69,Yes
+1008,EC,Male,6.5,Beginner,No,No,4,3,95.4,No,42,No
+1009,Mech,Female,8.4,Advanced,Yes,Yes,8,8,46.2,Yes,88,Yes
+1010,Civil,Male,7.0,Intermediate,No,No,5,5,81.6,No,56,No
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
